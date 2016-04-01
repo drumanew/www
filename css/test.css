@@ -1,6 +1,7 @@
-div:hover {
+/*div:hover {
   border: 3px solid red;
 }
+*/
 
 body {
   margin: 0;
@@ -113,38 +114,97 @@ body {
 }
 
 .input-text {
-  position: relative;
-  /*height: 16px;*/
   border-radius: 8px;
   border: 2px solid white;
   background-color: transparent;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   padding: 7px;
   display: block;
 }
 
-.input-text input {
+.input-text-wrapper {
+  display: table;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.input-text-row {
+  display: table-row;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.input-text-cell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.input-text-cell:nth-child(1) {
+  width: 17px;
+}
+
+.input-text-cell:nth-child(2) {
+  padding-right: 7px;
+}
+
+.input-text-cell input {
   color: #ffffff;
+  width: 100%;
+  size: 100;
+  height: 100%;
   font-family: 'Open Sans Condensed';
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 800;
   background-color: transparent;
   border: none;
-  /*width: calc(100% - 20px);*/
-  width: 90%;
-  margin-left: 10%;
+  margin: 0 7px;
 }
 
 .input-text-img {
-  left: 3%;
+  vertical-align: middle;
+  width: 17px;
+}
+
+.ib1 {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: calc((200% - 24px)/3 + 4px);
+}
+
+.ib2 {
   position: absolute;
+  width: calc((200% - 24px)/3);
+  height: 0;
+  padding-bottom: calc((200% - 24px)/3);
 }
 
-.big-input {
-
+.ib3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: calc((100% - 36px)/3);
+  height: 0;
+  padding-bottom: calc((100% - 36px)/3);
 }
 
+.ib4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: calc((100% - 36px)/3);
+  height: 0;
+  padding-bottom: calc((100% - 36px)/3);
+}
+
+.round-box {
+  border-radius: 8px;
+  border: 2px solid white;
+  background-color: transparent;
+}
 
 .clear-float {
   clear: both;
