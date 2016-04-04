@@ -284,8 +284,8 @@ input[type="checkbox"]:checked ~ .cb-div {
 .input-chat-area {
   min-height: 80px;
   padding: 6px;
-  margin-top: 16px;
   margin-bottom: 16px;
+  margin-top: 4px;
 }
 
 .input-chat-area textarea {
@@ -297,6 +297,44 @@ input[type="checkbox"]:checked ~ .cb-div {
   font-weight: 800;
   background-color: transparent;
   border: none;
+  resize: none;
+}
+
+.input-chat-wrapper {
+  border-top: #ffffff solid 1px;
+  border-bottom: #ffffff solid 1px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.input-chat-header {
+  display: table;
+  width: 100%;
+}
+
+.input-chat-header-name {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+.input-chat-header-dev {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 2px;
+}
+
+.input-chat-header-back {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.input-chat-toolbox {
+  display: table;
+  width: 100%;
 }
 
 .input-chat-send-btn {
@@ -307,4 +345,17 @@ input[type="checkbox"]:checked ~ .cb-div {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+}
+
+.input-chat-tb-img {
+  display: table-cell;
+  vertical-align: middle;
+  float: right;
+  padding-right: 10px;
+}
+
+.input-chat-history-item {
+  border-bottom: #ffffff solid 1px;
+  padding: 7px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
